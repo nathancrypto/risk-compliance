@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<p> Here are the top 10 ideas:</p>
+{% for i in ideas %}
+<p>{{i[0]}}</p>
+{% endfor %}
+<form action="" method="post" >
+        <p>
+            {{ form.vote.label }}
+            {{ form.vote() }}
+        </p>
+
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+<p>Press <a href="add_developed">here</a> to solve for the top 4 ideas.</p>
+{% endblock %}

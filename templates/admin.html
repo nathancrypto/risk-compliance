@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post" >
+        <p>
+            {{ form.vote.label }}
+            {{ form.vote() }}
+        </p>
+
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+<p><a href="/">add initial idea</a> <a href="initial_10"> vote for top 10</a> <a href="add_developed">add developed idea</a> <a href="developed_5">view 5 developed ideas</a></p>
+{% endblock %}

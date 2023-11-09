@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post" >
+        <p>
+            {{ form.idea.label }}
+            {{ form.idea() }}
+        </p>
+
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+<p>Press <a href="initial_10">here</a> to vote for the top ideas.</p>
+{% endblock %}

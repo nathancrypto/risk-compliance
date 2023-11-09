@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<p> Here are the final 5 solutions:</p>
+{% for i in ideas %}
+<p>{{i[0]}}</p>
+{% endfor %}
+{% endblock %}
